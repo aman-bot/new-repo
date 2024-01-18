@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        h3,h2, h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{user.0.profile_name}}</h1>
+    <h3>Number of Post {{user | length}}</h3>
+    {% for u in user %}
+    <a href="#"><img src="/{{u.img}}" width="570px" height="450px"></a>
+    {% endfor %}<br>
+</body>
+</html>
