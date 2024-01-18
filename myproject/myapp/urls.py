@@ -14,5 +14,6 @@ urlpatterns = [
     path('post/create/',views.UserCreateView.as_view(), name='user-list'),
     path('post/', views.UserListView.as_view(), name='post-lists'),
     path('post-form/', views.postform, name='post-form'),
+    path('post-the-form/', views.posttheform, name='post-the-form'),
     #path('user/post/', ,name='post'),
 ]
